@@ -14,13 +14,13 @@ function Cart(props) {
   return (
     <Modal>
       {cartItems}
-      <div>
+      <div className={classes.total}>
         <span>Total amount</span>
         <span>15</span>
       </div>
       <div className={classes.actions}>
         <button className={classes["button--alt"]}>Close</button>
-        <button className={classes.button}></button>
+        <button className={classes.button}>Order</button>
       </div>
     </Modal>
   );
