@@ -23,7 +23,7 @@ function MealItemForm(props) {
     props.onAddToCart(enteredAmountNumber);
   };
   return (
-    <form className={classes.form}>
+    <form className={classes.form} onSubmit={formSubmitHandler}>
       <Input
         ref={amountInputRef}
         label="Amount"
